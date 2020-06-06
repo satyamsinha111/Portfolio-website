@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .masthead {
   width: 100%;
   height: 100vh;
@@ -8,6 +12,10 @@ body {
 }
 #navbar {
   transition: 0.4s;
+}
+.about{
+  width: 100%;
+  background-color: #218F76;
 }
 .masthead-avatar {
   width: 20%;
@@ -36,10 +44,24 @@ body {
   letter-spacing: 2px;
   transition: 0.4s;
 }
-.portfolio{
-    width: 100%;
-    background-color: #DAE0E2;
+.address{
+  font-weight: lighter;
 }
+.portfolio {
+  width: 100%;
+  background-color: #dae0e2;
+}
+.custom-line-social-white{
+  width: 340px;
+    height: 13px;
+    border-top: 1px solid white;
+}
+.custom-line-address-white
+  {
+    width: 200px;
+    height: 13px;
+    border-top: 1px solid white;
+  }
 
 .font-link {
   font-size: 20px !important;
@@ -56,38 +78,43 @@ body {
   letter-spacing: 2px;
   transition: 0.4s;
 }
-.custom-line {
+.custom-line-white {
   width: 90px;
   height: 13px;
-  border-bottom: 1px solid black;
-  
+  border-bottom: 1px solid white;
 }
+
+.custom-line-black{
+  width: 90px;
+  height: 13px;
+  border-bottom: 1px solid #4C4B4B;
+}
+
+
+
 @media only screen and (max-width: 512px) {
   .masthead-heading {
     font-size: large;
   }
 }
 
-
-@media only screen and (max-width: 677px) 
-{
-    .text-skills{
-        font-size: 20px;
-    }
-    .masthead-avatar {
-        width: 50%;
-        height: auto;
-    }
+@media only screen and (max-width: 677px) {
+  .text-skills {
+    font-size: 20px;
+  }
+  .masthead-avatar {
+    width: 50%;
+    height: auto;
+  }
 }
-@media only screen and (max-width: 503px) 
-{
-    .text-skills{
-        font-size: 10px;
-    }
-    .masthead-avatar {
-        width: 50%;
-        height: auto;
-    }
+@media only screen and (max-width: 503px) {
+  .text-skills {
+    font-size: 10px;
+  }
+  .masthead-avatar {
+    width: 50%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 359px) {
@@ -102,7 +129,7 @@ body {
   .masthead-avatar {
     width: 50%;
     height: auto;
-}
+  }
 
   .font {
     font-size: 25px !important;
@@ -151,7 +178,7 @@ body {
   .masthead-avatar {
     width: 50%;
     height: auto;
-}
+  }
   .font {
     font-size: 20px !important;
     padding-bottom: 10px !important;
@@ -177,7 +204,7 @@ body {
     letter-spacing: 2px;
     transition: 0.4s;
   }
-
+  
   .font-link-shrink {
     font-size: 5px !important;
     font-family: "Arvo", serif;
@@ -185,4 +212,20 @@ body {
     letter-spacing: 2px;
     transition: 0.4s;
   }
+}
+
+.footer{
+  width: 100%;
+  background-color: #2C3335;
+}
+.portfolio-author-address
+{
+  font-size: 20px;
+}
+
+.img-portfolio{
+  width: 100%;
+  height: auto;
+  transition: 0.4s;
+  margin: 5px;
 }
