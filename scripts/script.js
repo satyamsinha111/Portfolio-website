@@ -30,44 +30,40 @@ const sendMessage = (event) => {
     email_address: emailAddress,
     message: message,
   };
-  console.log(JSON.stringify(clientData))
+  console.log(JSON.stringify(clientData));
   return fetch(`https://myportfolioapi123.herokuapp.com/client/message`, {
     method: "POST",
-    
+
     body: JSON.stringify(clientData),
     headers: {
-      
       "Content-Type": "application/json",
     },
-    
   })
     .then((response) => {
-        if(response.status===200)
-        {
-          $("#failure").addClass("d-none");
-          $("#failure").removeClass("d-block");
-          $("#success").addClass("d-block");
-          $("#success").removeClass("d-none");
-        }
-        else{
-          $("#success").removeClass("d-block");
-          $("#success").addClass("d-none");
-          $("#failure").addClass("d-block");
-          $("#failure").removeClass("d-none");
-        }
-        setTimeout(()=>{
-          console.log("hello")
-          $("#success").removeClass("d-block")
-          $("#failure").removeClass("d-block")
-          $("#success").addClass("d-none");
-          $("#failure").addClass("d-none");
-        },3000)
-        setTimeout(()=>{
-          location.reload()
-        },3000)
+      if (response.status === 200) {
+        $("#failure").addClass("d-none");
+        $("#failure").removeClass("d-block");
+        $("#success").addClass("d-block");
+        $("#success").removeClass("d-none");
+      } else {
+        $("#success").removeClass("d-block");
+        $("#success").addClass("d-none");
+        $("#failure").addClass("d-block");
+        $("#failure").removeClass("d-none");
+      }
+      setTimeout(() => {
+        console.log("hello");
+        $("#success").removeClass("d-block");
+        $("#failure").removeClass("d-block");
+        $("#success").addClass("d-none");
+        $("#failure").addClass("d-none");
+      }, 3000);
+      setTimeout(() => {
+        location.reload();
+      }, 3000);
     })
     .catch((error) => {
-      console.log(error)
+      console.log(error);
       return error;
     });
 };

@@ -244,8 +244,8 @@ body {
   width: 100%;
   height: auto;
   /* transition: 0.4s;
-  margin: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  margin: 5px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(167, 68, 68, 0.21); 
 }
 .wrapper {
   position: relative;
@@ -276,4 +276,8 @@ body {
 
 .description {
   font-size: small;
+}
+
+.nav-link:hover{
+  color:#99AAAB !important;
 }
