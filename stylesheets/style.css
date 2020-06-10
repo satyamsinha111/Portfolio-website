@@ -10,6 +10,13 @@ html {
 body {
   font-family: "Arvo", serif;
 }
+
+.textbox-styling
+{
+  border: none;
+  border-bottom: 1px solid #616C6F;
+  border-radius: 0px;
+}
 #navbar {
   transition: 0.4s;
 }
@@ -245,7 +252,8 @@ body {
   height: auto;
   /* transition: 0.4s;
   margin: 5px;*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(167, 68, 68, 0.21); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    0 6px 20px 0 rgba(167, 68, 68, 0.21);
 }
 .wrapper {
   position: relative;
@@ -278,6 +286,6 @@ body {
   font-size: small;
 }
 
-.nav-link:hover{
-  color:#99AAAB !important;
+.nav-link:hover {
+  color: #99aaab !important;
 }
