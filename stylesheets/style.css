@@ -10,13 +10,6 @@ html {
 body {
   font-family: "Arvo", serif;
 }
-
-.textbox-styling
-{
-  border: none;
-  border-bottom: 1px solid #616C6F;
-  border-radius: 0px;
-}
 #navbar {
   transition: 0.4s;
 }
