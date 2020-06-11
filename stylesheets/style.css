@@ -7,6 +7,15 @@ html {
   height: 100vh;
   background-color: #218f76;
 }
+
+.textbox-styling
+{
+  border: none;
+  border-bottom: 1px solid #616C6F;
+  border-radius: 0px;
+}
+
+
 body {
   font-family: "Arvo", serif;
 }
