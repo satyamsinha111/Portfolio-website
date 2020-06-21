@@ -15,9 +15,9 @@ $(".nav-link").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
 
-$("#brand").on("click",()=>{
+$("#brand").on("click", () => {
   $(".navbar-collapse").collapse("hide");
-})
+});
 
 const sendMessage = (event) => {
   //fetch from the api
