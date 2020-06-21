@@ -35,7 +35,7 @@ const sendMessage = (event) => {
     message: message,
   };
   console.log(JSON.stringify(clientData));
-  return fetch(`https://myportfolioapi123.herokuapp.com/client/message`, {
+  return fetch(`https://satyamsinha.herokuapp.com/satyamsinha/client/message`, {
     method: "POST",
 
     body: JSON.stringify(clientData),
